@@ -1,0 +1,115 @@
+.standing-table-container {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  animation: slideInUp 0.5s ease;
+}
+
+.standing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.standing-table thead {
+  background: var(--dark-bg);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.standing-table th {
+  padding: 16px 12px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--electric-blue);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.standing-table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.standing-table tbody tr:hover {
+  background: rgba(0, 153, 255, 0.05);
+}
+
+.standing-table td {
+  padding: 12px;
+  color: var(--text-secondary);
+}
+
+.standing-table td.team-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.team-badge {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  border-radius: 6px;
+  font-weight: 700;
+  color: var(--white);
+  font-size: 0.75rem;
+}
+
+.team-name {
+  text-align: left;
+}
+
+.position {
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.positive {
+  color: var(--neon-green);
+  font-weight: 600;
+}
+
+.negative {
+  color: var(--danger-red);
+  font-weight: 600;
+}
+
+.points {
+  font-weight: 700;
+  color: var(--electric-blue);
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .standing-table {
+    font-size: 0.75rem;
+  }
+
+  .standing-table th,
+  .standing-table td {
+    padding: 8px 6px;
+  }
+
+  .team-badge {
+    width: 32px;
+    height: 32px;
+    font-size: 0.65rem;
+  }
+
+  .team-name {
+    display: none;
+  }
+
+  .standing-table td.team-cell {
+    gap: 0;
+  }
+}

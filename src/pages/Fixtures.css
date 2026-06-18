@@ -1,0 +1,104 @@
+.fixtures-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: var(--dark-charcoal);
+}
+
+.fixtures-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: slideInUp 0.5s ease;
+}
+
+.fixtures-header h1 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.fixtures-header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.fixtures-filters {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--electric-blue);
+  text-transform: uppercase;
+}
+
+.filter-group select {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.filter-group select:hover {
+  border-color: var(--electric-blue);
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: var(--electric-blue);
+  box-shadow: 0 0 12px rgba(0, 153, 255, 0.3);
+}
+
+.fixtures-list {
+  animation: fadeIn 0.5s ease;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--card-bg);
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+}
+
+.no-results p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .fixtures-page {
+    padding: 40px 16px;
+  }
+
+  .fixtures-header {
+    margin-bottom: 40px;
+  }
+
+  .fixtures-header h1 {
+    font-size: 2rem;
+  }
+
+  .fixtures-filters {
+    gap: 12px;
+  }
+
+  .filter-group select {
+    min-width: 120px;
+  }
+}

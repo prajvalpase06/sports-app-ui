@@ -1,0 +1,135 @@
+.home {
+  width: 100%;
+}
+
+.section-fixtures {
+  background: var(--dark-charcoal);
+}
+
+.fixtures-scroll {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.fixture-item {
+  animation: slideInUp 0.5s ease;
+}
+
+.section-leagues {
+  background: linear-gradient(180deg, var(--dark-charcoal) 0%, var(--card-bg) 100%);
+}
+
+.section-standings {
+  background: var(--dark-charcoal);
+}
+
+.section-news {
+  background: linear-gradient(180deg, var(--card-bg) 0%, var(--dark-charcoal) 100%);
+}
+
+.section-favorites {
+  background: var(--dark-charcoal);
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.favorite-team-card {
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease;
+  animation: slideInUp 0.5s ease;
+}
+
+.favorite-team-card:hover {
+  border-color: var(--electric-blue);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 153, 255, 0.2);
+}
+
+.favorite-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.favorite-logo {
+  font-size: 2.5rem;
+}
+
+.favorite-header h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.favorite-fixture {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fixture-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+
+.fixture-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vs-text {
+  font-size: 0.875rem;
+  color: var(--electric-blue);
+  font-weight: 700;
+}
+
+.opponent {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.match-date {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.favorite-team-card .btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .fixtures-scroll {
+    grid-template-columns: 1fr;
+  }
+
+  .favorites-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 40px 16px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+}

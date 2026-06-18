@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Vibrant Color Palette */
+  --electric-blue: #0099ff;
+  --neon-green: #00ff88;
+  --purple: #9d4edd;
+  --white: #ffffff;
+  --dark-charcoal: #0a0e27;
+  
+  /* Extended Colors */
+  --dark-bg: #0f1419;
+  --card-bg: #1a1f3a;
+  --border-color: #2d3561;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b8d4;
+  --accent-gold: #ffd700;
+  --success-green: #1db954;
+  --danger-red: #ff4444;
+  --warning-orange: #ff9500;
+
+  /* Typography */
+  --sans: 'Inter', system-ui, 'Segoe UI', sans-serif;
+  --heading: 'Bebas Neue', 'Inter', system-ui, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 20px rgba(0, 153, 255, 0.3);
+  --shadow-glow-green: 0 0 20px rgba(0, 255, 136, 0.2);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #0099ff 0%, #9d4edd 100%);
+  --gradient-secondary: linear-gradient(135deg, #00ff88 0%, #0099ff 100%);
+  --gradient-dark: linear-gradient(135deg, #1a1f3a 0%, #2d3561 100%);
+
+  font-size: 16px;
+  font-family: var(--sans);
+  color: var(--text-primary);
+  background: var(--dark-charcoal);
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--dark-charcoal);
+  color: var(--text-primary);
+  font-family: var(--sans);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--dark-charcoal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--electric-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--neon-green);
+}
+
+button {
+  font-family: var(--sans);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+code {
+  font-family: var(--mono);
+  padding: 4px 8px;
+  background: var(--card-bg);
+  border-radius: 4px;
+  color: var(--neon-green);
+  font-size: 0.875rem;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-charcoal);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--electric-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-green);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}

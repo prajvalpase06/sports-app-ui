@@ -1,0 +1,74 @@
+.league-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.league-card {
+  background: linear-gradient(135deg, var(--league-accent) 0%, var(--league-color) 100%);
+  border: 2px solid var(--league-color);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  animation: slideInUp 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 200px;
+  justify-content: space-between;
+}
+
+.league-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 153, 255, 0.3);
+  border-color: var(--neon-green);
+}
+
+.league-header {
+  display: flex;
+  justify-content: center;
+}
+
+.league-logo {
+  font-size: 3rem;
+}
+
+.league-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.league-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.league-country {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.75rem;
+  align-self: center;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .league-card {
+    padding: 16px;
+    min-height: 160px;
+  }
+
+  .league-logo {
+    font-size: 2.5rem;
+  }
+
+  .league-name {
+    font-size: 1.25rem;
+  }
+}
